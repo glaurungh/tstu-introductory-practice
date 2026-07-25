@@ -1,0 +1,48 @@
+@import "true";
+@import "../solutions/1-extension";
+
+@include describe("Link Test") {
+  @include it("Link with style") {
+    @include assert {
+      @include output {
+        @include link;
+      }
+
+      @include contains {
+        .text-link {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @include it("Link hover with style") {
+    @include assert {
+      @include output {
+        @include link;
+      }
+
+      @include contains {
+        .text-link:hover {
+          color: blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @include it("Span with style") {
+    @include assert {
+      @include output {
+        @include link;
+      }
+
+      @include contains {
+        .text-link span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

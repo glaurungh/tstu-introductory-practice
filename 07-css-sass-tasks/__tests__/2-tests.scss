@@ -1,0 +1,60 @@
+@import "true";
+@import "../solutions/2-mixin";
+
+@include describe("Mixin opacity-transition-1s") {
+  @include it("opacity-transition-1s style") {
+    @include assert {
+      @include output {
+        @include opacity-transition-1s;
+      }
+
+      @include contains {
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        transition: opacity 1s;
+      }
+    }
+  }
+}
+
+@include describe("Mixin link-hover") {
+  @include it("link-hover style") {
+    @include assert {
+      @include output {
+        @include link-hover;
+      }
+
+      @include contains {
+        opacity: 0.5;
+
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        transition: opacity 1s;
+      }
+    }
+  }
+}
+
+@include describe("Mixin link") {
+  @include it("link style") {
+    @include assert {
+      @include output {
+        @include link;
+      }
+
+      @include contains {
+        color: #333;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.5;
+
+          -webkit-transition: opacity 1s;
+          -moz-transition: opacity 1s;
+          transition: opacity 1s;
+        }
+      }
+    }
+  }
+}
