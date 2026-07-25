@@ -50,13 +50,13 @@ body {
 }
 
 /* BEGIN (write your solution here) */
-.flipping-card:hover .flipping-card-front {
-  transform: rotateY(180deg);
-}
+  .flipping-card:hover .flipping-card-front {
+    transform: rotateY(180deg);
+  }
 
-.flipping-card:hover .flipping-card-back {
-  transform: rotateY(360deg);
-}
+  .flipping-card:hover .flipping-card-back {
+    transform: rotateY(360deg);
+  }
 /* END */
 
 .flex {

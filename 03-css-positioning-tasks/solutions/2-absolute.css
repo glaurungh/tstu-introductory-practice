@@ -12,7 +12,7 @@ body {
 }
 
 /* BEGIN (write your solution here) */
-.square {
+.square{
   position: absolute;
   top: 0;
   left: 0;
@@ -20,21 +20,21 @@ body {
   height: var(--side);
 }
 
-.square-red {
+.square-red{
   background-color: var(--red);
 }
 
-.square-green {
+.square-green{
   background-color: var(--green);
-  top: auto;
-  bottom: 0;
+  top: auto; 
+  bottom: 0; 
   left: calc(50% - var(--side) / 2);
 }
 
-.square-blue {
+.square-blue{
   background-color: var(--blue);
-  right: 0;
-  top: 0;
-  left: auto;
+  right: 0; 
+  top: 0; 
+  left: auto; 
 }
 /* END */

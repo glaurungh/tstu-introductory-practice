@@ -17,42 +17,85 @@
                     <!-- BEGIN (write your solution here) -->
                     <div class="row mb-3">
                         <div class="col-8">
-                            <label for="card-holder" class="form-label text-muted small">Владелец карты</label>
-                            <input type="text" class="form-control" id="card-holder" placeholder="Фамилия Имя">
+                            <label for="card-owner" class="form-label text-muted small">
+                                Владелец карты
+                            </label>
+                            <input
+                                type="text"
+                                id="card-owner"
+                                class="form-control"
+                                placeholder="Фамилия Имя"
+                            >
                         </div>
                         <div class="col-4">
-                            <label for="expiration" class="form-label text-muted small">Срок действия</label>
-                            <input type="text" class="form-control" id="expiration" placeholder="Месяц / Год">
+                            <label for="card-expiration" class="form-label text-muted small">
+                                Срок действия
+                            </label>
+                            <input
+                                type="text"
+                                id="card-expiration"
+                                class="form-control"
+                                placeholder="Месяц / Год"
+                            >
                         </div>
                     </div>
+
                     <div class="row mb-3">
                         <div class="col-9">
-                            <label for="card-number" class="form-label text-muted small">Номер карты</label>
-                            <input type="number" class="form-control" id="card-number" placeholder="Номер карты">
+                            <label for="card-number" class="form-label text-muted small">
+                                Номер карты
+                            </label>
+                            <input
+                                type="number"
+                                id="card-number"
+                                class="form-control"
+                                placeholder="Номер карты"
+                            >
                         </div>
                         <div class="col-3">
-                            <label for="card-cvc" class="form-label text-muted small">CVC</label>
-                            <input type="number" class="form-control" id="card-cvc" placeholder="CVC">
+                            <label for="card-cvc" class="form-label text-muted small">
+                                CVC
+                            </label>
+                            <input
+                                type="number"
+                                id="card-cvc"
+                                class="form-control"
+                                placeholder="CVC"
+                            >
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="description" class="form-label text-muted small">Описание карты</label>
-                            <input type="text" class="form-control" id="description" placeholder="Описание карты">
-                        </div>
+
+                    <div class="mb-3">
+                        <label for="card-description" class="form-label text-muted small">
+                            Описание карты
+                        </label>
+                        <input
+                            type="text"
+                            id="card-description"
+                            class="form-control"
+                            placeholder="Описание карты"
+                        >
                     </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="additional" class="form-label text-muted small">Дополнительная информация</label>
-                            <textarea class="form-control" id="additional" placeholder="Дополнительная информация"
-                                rows="5"></textarea>
-                        </div>
+
+                    <div class="mb-3">
+                        <label for="card-info" class="form-label text-muted small">
+                            Дополнительная информация
+                        </label>
+                        <textarea
+                            id="card-info"
+                            class="form-control"
+                            rows="5"
+                            placeholder="Дополнительная информация"
+                        ></textarea>
                     </div>
-                    <div class="row">
-                        <div class="col text-end">
-                            <button class="btn btn-success">Добавить</button>
-                            <button class="btn btn-warning">Отмена</button>
-                        </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-success">
+                            Добавить
+                        </button>
+                        <button type="button" class="btn btn-warning">
+                            Отмена
+                        </button>
                     </div>
                     <!-- END -->
                 </form>

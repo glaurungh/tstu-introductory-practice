@@ -23,25 +23,21 @@
   }
   
   /* BEGIN (write your solution here) */
-  .shadow-skew {
-    position: relative;
+ .shadow-skew {
+  position: relative;
+  text-transform: uppercase;
+  transform: skewY(-10deg);
+ }
 
-    text-transform: uppercase;
-
-    transform: skewY(-10deg);
-  }
-
-  .shadow-skew::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    content: attr(data-content);
-
-    color: #0003;
-
-    transform: skewX(50deg) translate(-0.35em, 0.12em) scaleY(0.6);
-  }
+ .shadow-skew::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: #0003;
+  transform: skewX(50deg) translate(-0.35em, 0.12em) scaleY(0.6);
+ }
   /* END */
   
   .flex-center {

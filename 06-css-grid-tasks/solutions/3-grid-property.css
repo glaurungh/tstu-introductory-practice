@@ -22,13 +22,13 @@ h1 {
 
 .template-grid {
   /* BEGIN (write your solution here) */
-  display: grid;
+ display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 20px;
   grid-template-areas:
-    "header header header header header header header header"
+    "header   header   header   header   header   header   header   header"
     "carousel carousel carousel carousel carousel carousel carousel carousel"
-    "left left main main main main main main";
+    "aside    aside    main     main     main     main     main     main";
+  gap: 20px;
   /* END */
 }
 
@@ -49,7 +49,7 @@ h1 {
 
 .left-aside {
   /* BEGIN (write your solution here) */
-  grid-area: left;
+  grid-area: aside;
   /* END */
 }
 
@@ -117,19 +117,19 @@ h1 {
 
 .col-4 {
   /* BEGIN (write your solution here) */
-  grid-column: span 4;
+grid-column: span 4;
   /* END */
 }
 
 .col-6 {
   /* BEGIN (write your solution here) */
-  grid-column: span 6;
+grid-column: span 6;
   /* END */
 }
 
 .col-12 {
   /* BEGIN (write your solution here) */
-  grid-column: span 12;
+grid-column: span 12;
   /* END */
 }
 

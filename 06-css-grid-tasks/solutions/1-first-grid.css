@@ -15,7 +15,6 @@ h1 {
   /* BEGIN (write your solution here) */
   display: grid;
   grid-template-columns: max-content 1fr 200px;
-  align-items: center;
   /* END */
 }
 
