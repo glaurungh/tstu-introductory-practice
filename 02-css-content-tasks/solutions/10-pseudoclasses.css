@@ -14,10 +14,13 @@ body {
   height: 500px;
 
   background: #b58763;
-
+  
   border-collapse: collapse;
 }
 
 /* BEGIN (write your solution here) */
-
+.chessboard tr:nth-child(odd) td:nth-child(odd),
+.chessboard tr:nth-child(even) td:nth-child(even)  {
+  background: #f1d9b5; 
+}
 /* END */

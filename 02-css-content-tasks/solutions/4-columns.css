@@ -31,18 +31,21 @@ img {
 
 .article {
   /* BEGIN (write your solution here) */
-
+  column-count: 2;
+  column-gap: 50px;
+  column-rule: 1px solid #3d405b;
   /* END */
 }
 
 .applicants {
   margin: 50px 0;
   padding: 20px;
-
+  
   color: #f4f1de;
 
   /* BEGIN (write your solution here) */
-
+  column-span: all;
+  column-count: 2;
   /* END */
 
   background: #3d405b;
@@ -50,7 +53,7 @@ img {
 
 .applicants-header {
   /* BEGIN (write your solution here) */
-
+  column-span: all;
   /* END */
 }
 
