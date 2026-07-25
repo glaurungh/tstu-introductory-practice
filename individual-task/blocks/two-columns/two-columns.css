@@ -1,0 +1,6 @@
+/* Две колонки: краткий заголовок слева, основной текст справа */
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}

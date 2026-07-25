@@ -1,0 +1,10 @@
+.cards__item {
+  padding-top: 60px;
+  margin-right: 100px;
+  width: 240px;
+}
+
+/* Каждая третья карточка в ряду — последняя, отступ не нужен */
+.cards__item:nth-child(3n) {
+  margin-right: 0;
+}

@@ -1,0 +1,8 @@
+/* Два видео вынесены за нижнюю границу секции: отрицательный сдвиг
+   вниз на 50px создаёт перекрытие со следующей секцией (oakley). */
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -50px;
+}

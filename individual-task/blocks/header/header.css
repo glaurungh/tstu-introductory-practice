@@ -1,0 +1,14 @@
+/* Шапка занимает всю высоту первого экрана. Элементы внутри
+   позиционируются абсолютно относительно этого блока. */
+.header {
+  height: 100vh;
+  min-height: 700px;
+  max-height: 756px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  position: relative;
+  padding-left: 64px;
+  overflow: hidden;
+}

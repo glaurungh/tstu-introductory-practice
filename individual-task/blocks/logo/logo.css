@@ -1,0 +1,9 @@
+/* Логотип-надпись. Положение задаётся модификатором place (header / footer),
+   изображение — тоже модификатором, чтобы блок был универсальным. */
+.logo {
+  width: 228px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}

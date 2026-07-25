@@ -1,0 +1,7 @@
+/* Логотип в шапке: белый вариант, прижат к левому верхнему углу */
+.logo_place_header {
+  background-image: url(../../../images/logo_place_header.svg);
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}

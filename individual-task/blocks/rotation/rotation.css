@@ -1,0 +1,14 @@
+/* Бесконечное равномерное вращение для декоративных фигур:
+   синего квадрата в шапке и синего треугольника в секции Кауфмана. */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}

@@ -1,0 +1,4 @@
+/* Большие ячейки в светлой секции digits */
+.table__cell_size_l {
+  width: 250px;
+}
