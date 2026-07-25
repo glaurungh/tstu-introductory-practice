@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Black Ops One";
+  src: url("./assets/fonts/BlackOpsOne-Regular.ttf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  /* BEGIN (write your solution here) */
+  width: 1000px;
+  /* END */
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  color: #846ffd;
+  font: 20px/1.5 "Black Ops One", monospace;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: calc((100% / 3) - 20px);
+  padding: 20px;
+
+  color: #fff;
+
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+/* BEGIN (write your solution here) */
+.card:hover {
+  transform: scale(1.2);
+}
+/* END */
