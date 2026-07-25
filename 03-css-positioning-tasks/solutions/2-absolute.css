@@ -1,0 +1,40 @@
+:root {
+  --red: #f44336;
+  --green: #4caf50;
+  --blue: #2196f3;
+  --side: 200px;
+}
+
+body {
+  width: 600px;
+  height: 400px;
+  margin: 0;
+}
+
+/* BEGIN (write your solution here) */
+.square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--side);
+  height: var(--side);
+}
+
+.square-red {
+  background-color: var(--red);
+}
+
+.square-green {
+  background-color: var(--green);
+  top: auto;
+  bottom: 0;
+  left: calc(50% - var(--side) / 2);
+}
+
+.square-blue {
+  background-color: var(--blue);
+  right: 0;
+  top: 0;
+  left: auto;
+}
+/* END */
