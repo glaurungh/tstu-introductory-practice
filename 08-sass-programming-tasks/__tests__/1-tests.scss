@@ -1,0 +1,38 @@
+@import "true";
+@import "../solutions/1-mixin-function.scss";
+
+@include describe("bg-gradient mixin testing") {
+  @include it("test primary gradient") {
+    @include assert {
+      @include output {
+        .primary-gradient {
+          @include bg-gradient(#d16ba5, #86a8e7, #5ffbf1);
+        }
+      }
+
+      @include contains {
+        .primary-gradient {
+          background: #86a8e7;
+          background: linear-gradient(90deg, #d16ba5 0%, #86a8e7 35%, #5ffbf1 100%);
+        }
+      }
+    }
+  }
+
+  @include it("test secondary gradient") {
+    @include assert {
+      @include output {
+        .secondary-gradient {
+          @include bg-gradient(#7f3f01, #a77755, #ffe9cf);
+        }
+      }
+
+      @include contains {
+        .secondary-gradient {
+          background: #a77755;
+          background: linear-gradient(90deg, #7f3f01 0%, #a77755 35%, #ffe9cf 100%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "true";
+@import "../solutions/2-function.scss";
+
+@include describe("grid-container-width") {
+  @include it("grid-container-width function result with normal value") {
+    @include assert-equal(grid-container-width(1), 45px);
+    @include assert-equal(grid-container-width(3), 165px);
+    @include assert-equal(grid-container-width(5), 285px);
+    @include assert-equal(grid-container-width(15), 885px);
+  }
+
+  @include it("grid-container-width function result with zero") {
+    @include assert-equal(grid-container-width(0), -15px);
+  }
+
+  @include it("grid-container-width function result with negative value") {
+    @include assert-equal(grid-container-width(-3), -195px);
+  }
+}
